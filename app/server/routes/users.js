@@ -4,8 +4,11 @@ const path = require('path');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+router.get('/mainImg', function(req, res, next) {
   res.sendfile(path.resolve('public/images/qu.jpeg'));
-  // res.send('respond with a resource');
 });
 
 module.exports = router;
